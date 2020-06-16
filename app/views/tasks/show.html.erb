@@ -1,4 +1,7 @@
-<h1><%= @task.title %></h1>
+<div>
+  <h1><%= @task.title %></h1>
+  <i class="fas fa-pencil-alt"></i><%= link_to 'Edit this task', task_edit_path(@task.id) %>
+</div>
 <p><%= @task.details %></p>
 <p>
 <% if @task.completed %>
